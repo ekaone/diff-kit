@@ -1,5 +1,3 @@
-# 🚧 Under Development, not released yet
-
 # @ekaone/diff-kit
 
 Zero-dependency line diff utility. Compute, format, and summarize text diffs.
@@ -7,7 +5,14 @@ Zero-dependency line diff utility. Compute, format, and summarize text diffs.
 ## Install
 
 ```bash
+# Using pnpm
 pnpm add @ekaone/diff-kit
+
+# Using npm
+npm install @ekaone/diff-kit
+
+# Using yarn
+yarn add @ekaone/diff-kit
 ```
 
 ## API
