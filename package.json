@@ -1,6 +1,6 @@
 {
   "name": "@ekaone/diff-kit",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Zero-dependency line diff utility — diff, formatDiff, diffStats.",
   "keywords": [
     "diff",
