@@ -1,11 +1,17 @@
 import { defineConfig } from "tsup";
 
 export default defineConfig({
-  entry: ["src/index.ts"],
-  format: ["cjs", "esm"],
+  entry: {
+    index: "src/index.ts",
+    react: "src/react/index.ts",
+  },
+  format: ["esm", "cjs"],
   dts: true,
   clean: true,
-  minify: true, // esbuild
   sourcemap: true,
   treeshake: true,
+  external: ["react", "react-dom", "react/jsx-runtime"],
+  esbuildOptions(options) {
+    options.resolveExtensions = [".ts", ".tsx", ".js", ".jsx"];
+  },
 });
